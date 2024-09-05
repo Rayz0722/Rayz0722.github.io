@@ -1,9 +1,9 @@
 <template>
   <nav>
     <router-link to="/">Home</router-link> |
-    <router-link to="/ResearchProject">Research/Project</router-link> |
+    <router-link to="/ResearchProject">Project</router-link> |
     <router-link to="/Music">Music</router-link> |
-    <router-link to="/Resume">Resume</router-link> |
+    <router-link to="/Resume">CV</router-link> |
   </nav>
   <router-view/>
 </template>
@@ -18,6 +18,7 @@
 }
 
 nav {
+  background-color: #ffffff81; /* Deep gray color */
   padding: 30px;
 }
 

@@ -12,16 +12,21 @@
       <a :href="instagramUrl" target="_blank" rel="noopener noreferrer">
         <i class="fab fa-instagram"></i>  <!-- Instagram Icon -->
       </a>
-    </div>
+  </div>
     <div class="MyProfile">
-      <p> Hi there! I'm Ruiyang Zhou, and this is my personal website.</p>
+      <p> Hi there! I'm Ruiyang Zhou, and this is my personal website. Basically, this is a profortlio website showing my area of study, my projects, and even my music.
+         I am A current student in University of Virginia. Majored in Computer Science(B.A). I am interested in many different fields like computer architecture, system, and digital signal processing.
+         In addition to computer science, I also put a lot of effort learning music including production and mixing. Therefore, I also enjoy investigating into the intersection of computer science and music.
+         Here are some of my basic information:
+      </p>
       <p> Email: rz3zv@virginia.edu Tel: 434-257-7610</p>
       <p> Education: University of Virginia, Bachelor of Art, Computer Science</p>
       <p> Field of Interest: Computer architecture,Computer System, Digital Signal Processing, Music production, Sound Synthesis, Audio Engineering etc.</p>
       <p> Programming Languages: C++, Python, X86 Assembly, HTML, Java, Javascript </p>
-      <p> Technology/Environment: Xilinx Vitis, JUCE, Django, OpenCL, Vivado, Vue.js, SolidWorks, Ardruino, Latex, Ableton, Pure data</p>
+      <p> Technology/Environment: Xilinx Vitis, Linux, JUCE, Django, OpenCL, Vivado, Vue.js, SolidWorks, Ardruino, Latex, Ableton, Pure data</p>
       <p> Courses Taken : Software Development Method, Discrete Math, Program and Data Representation,  Intro to Cybersecurity, Advanced Software Development, Discrete Math and Theory 2 , Data Structure and Algorithm 2, Computer Architecture, Hardware Security, Digital Signal Processing, Operating System.</p>
     </div>
+    <h4>This page will continue update</h4>
   </div>
 </template>
 
@@ -44,7 +49,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .profile-container {
-  margin: 100px; 
+  margin: 10px; 
 }
 .MyProfile {
   text-align: left;
