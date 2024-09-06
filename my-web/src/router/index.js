@@ -45,6 +45,12 @@ const routes = [
     name: 'Project4View',
     component: () => import(/* webpackChunkName: "Project3" */ '../views/Project4View.vue')
   },
+  // Catch-all route for handling unknown routes (404 fallback)
+  {
+    path: '/:pathMatch(.*)*',
+    name: 'NotFound',
+    component: HomeView // or you can create a custom 404 view
+  }
   
 ]
 
