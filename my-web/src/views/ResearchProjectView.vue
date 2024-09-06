@@ -2,6 +2,10 @@
   <div>
     <h1>Projects</h1>
     <div class="projects-container">
+
+      <!-- Left blank div -->
+      <!--<div class="blank-space"></div>-->
+
       <div class="projects">
         <router-link to="/ResearchProject/project1" class="project-block">
           <div>
@@ -10,6 +14,7 @@
           </div>
         </router-link>
       </div>
+
       <div class="projects">
         <router-link to="/ResearchProject/project2" class="project-block">
           <div>
@@ -18,6 +23,9 @@
           </div>
         </router-link>
       </div>
+      <!-- right blank div -->
+      <!--<div class="blank-space"></div>-->
+
       <div class="projects">
         <router-link to="/ResearchProject/project3" class="project-block">
           <div>
@@ -26,6 +34,7 @@
           </div>
         </router-link>
       </div>
+
       <div class="projects">
         <router-link to="/ResearchProject/project4" class="project-block">
           <div>
@@ -34,6 +43,7 @@
           </div>
         </router-link>
       </div>
+
     </div>
   </div>
 </template>
@@ -52,11 +62,18 @@ export default {
   justify-content: center;
   align-items: center; /* Centers the blocks vertically */
   gap: 40px; /* Adjust the gap between blocks as needed */
-  margin-left: 40px;
+  /*margin-left: 40px;*/
+  margin-left: 8%;
+  margin-right: 8%;
+}
+
+.blank-space {
+  height: 100%; /* Adjusts the space on the left and right equally */
+  width: 15%; /* Adjusts the space on the left and right equally */
 }
 
 .projects {
-  width: 40%; 
+  /*width: 40%; */
   box-sizing: border-box;
 }
 
