@@ -52,6 +52,9 @@ export default {
   margin: 10px; 
 }
 .MyProfile {
+  margin: 10px;
+  margin-left: 10%;
+  margin-right: 10%;
   text-align: left;
   padding: 20px; /* Add padding if you want space inside the block */
   border: 1px solid #ccc; /* Optional: Add a border around the block */
