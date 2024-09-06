@@ -59,4 +59,14 @@ const router = createRouter({
   routes
 })
 
+// Handle the redirect from 404.html when GitHub Pages redirects
+router.beforeEach((to, from, next) => {
+  const redirect = to.query.redirect;
+  if (redirect) {
+    next(redirect); // Redirect to the original intended route
+  } else {
+    next(); // Proceed as normal
+  }
+});
+
 export default router

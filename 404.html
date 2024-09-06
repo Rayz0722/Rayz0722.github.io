@@ -3,11 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="refresh" content="0;url=/#/404">
+  <meta http-equiv="refresh" content="0;url=/">
   <title>Page Not Found</title>
   <script type="text/javascript">
-    var redirect = window.location.pathname;
-    window.location = window.location.origin + redirect;
+    // Capture the current path and pass it along to Vue Router
+    var currentPath = window.location.pathname + window.location.search + window.location.hash;
+    window.location.replace(window.location.origin + '/?' + 'redirect=' + encodeURIComponent(currentPath));
   </script>
 </head>
 <body>
