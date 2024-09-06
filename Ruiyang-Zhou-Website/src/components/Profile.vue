@@ -15,7 +15,7 @@
   </div>
     <div class="MyProfile">
       <p> Hi there! I'm Ruiyang Zhou, and this is my personal website. Basically, this is a profortlio website showing my area of study, my projects, and even my music.
-         I am A current student in University of Virginia. Majored in Computer Science(B.A). I am interested in many different fields like computer architecture, system, and digital signal processing.
+         I am a current student in University of Virginia. Majored in Computer Science(B.A). I am interested in many different fields like computer architecture, system, and digital signal processing.
          In addition to computer science, I also put a lot of effort learning music including production and mixing. Therefore, I also enjoy investigating into the intersection of computer science and music.
          Here are some of my basic information:
       </p>

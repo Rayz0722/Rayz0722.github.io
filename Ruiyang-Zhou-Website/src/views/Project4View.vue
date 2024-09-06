@@ -95,7 +95,7 @@ Output=round(Resolution/Input)×Resolution which is expr~ round($v1/$f2). This e
       For the FM synthesis in this instrument, I have 1 carrier and 1 modulator. The carrier has 4 waveshapes which are changeable but the modulator is just a oscillator with sine wave. I set the frequency of carrier and modulator the same so that it can have clear pitch with FM synthesis. I modulate the Mod index by using the joystick1 Y axis. 
     </p>
 
-    <h4>Moses to set stable default and limit valu</h4>
+    <h4>Moses to set stable default and limit value</h4>
     <div class="images">
       <img src="@/assets/feature3.png" alt="Feature 3" class="prototype-image">
     </div>
