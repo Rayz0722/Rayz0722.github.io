@@ -11,7 +11,7 @@
 
 <script>
 // Importing a PDF file from assets
-import pdfUrl from '@/assets/Ruiyang_Zhou_CV.pdf';
+import pdfUrl from '@/assets/Ruiyang_CV_full.pdf';
 
 export default {
   data() {

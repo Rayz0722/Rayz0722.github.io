@@ -1,0 +1,2 @@
+"use strict";(self["webpackChunkruiyang_zhou_website"]=self["webpackChunkruiyang_zhou_website"]||[]).push([[594],{8502:function(e,r,u){u.r(r),u.d(r,{default:function(){return l}});var n=u(6768);const s={class:"Resume"},t=["src"];function a(e,r,u,a,f,i){return(0,n.uX)(),(0,n.CE)("div",s,[(0,n.Lk)("iframe",{src:f.pdfUrl,width:"70%",height:"1000px"},null,8,t)])}var f=u.p+"assets/pdf/Ruiyang_CV_full.b8db3e6f.pdf",i={data(){return{pdfUrl:f}}},c=u(1241);const d=(0,c.A)(i,[["render",a]]);var l=d}}]);
+//# sourceMappingURL=about.5d6000d5.js.map
