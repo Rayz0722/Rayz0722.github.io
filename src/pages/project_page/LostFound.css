@@ -1,0 +1,20 @@
+.container{
+  max-width: 100%;  
+  margin: 0 auto;      
+  justify-content: center;
+}
+
+.images{
+  max-width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px; /* Space between the images and the paragraph */
+}
+
+.prototype-image{
+    max-width: 45%;
+}
+
+.YoutubePlayer{
+  max-width: 50%;
+}

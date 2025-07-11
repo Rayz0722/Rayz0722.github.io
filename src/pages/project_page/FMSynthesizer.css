@@ -1,0 +1,32 @@
+.container{
+  max-width: 100%;  
+  margin: 0 auto;      
+  justify-content: center;
+}
+
+.images{
+  max-width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px; /* Space between the images and the paragraph */
+}
+
+.prototype-image{
+    max-width: 50%;
+}
+
+.YoutubePlayer {
+  width: 60%;                  /*  make it 50% of parent/container */
+  aspect-ratio: 16 / 9;        /*  maintain 16:9 ratio */
+  position: relative;
+  margin: 0 auto;              /* center it if needed */
+  justify-content: center;
+  align-items: center;
+}
+
+.YoutubePlayer iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  display: block;
+}

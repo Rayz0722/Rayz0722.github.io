@@ -14,7 +14,7 @@ export default function Projects() {
   
           </Link>
 
-          <Link to="/projects/lost&found" className="project-block">
+          <Link to="/projects/lost-found" className="project-block">
         
               <h2>HoosLost & HoosFound</h2>
               <p>A lost and found website for university community.</p>

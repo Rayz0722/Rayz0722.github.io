@@ -4,16 +4,20 @@ import Home from './pages/Home';
 import Projects from './pages/Projects';
 import CV from './pages/CV';
 import Music from './pages/Music';
+import Tennis from './pages/project_page/Tennis';
+import LostFound from './pages/project_page/LostFound';
+import MultibandDistortion from './pages/project_page/MultibandDistortion';
+import FMSynthesizer from './pages/project_page/FMSynthesizer';
 import './App.css'
 
 
 function App() {
   return (
     <BrowserRouter>
-      <nav style={{ margin: 10 }}>
-        <Link to="/" style={{ marginRight: 10 }}>Home</Link>
-        <Link to="/Projects"style={{ marginRight: 10 }}>Projects</Link>
-        <Link to="/Music"style={{ marginRight: 10 }}>Music</Link>
+      <nav>
+        <Link to="/" >Home</Link>
+        <Link to="/Projects">Projects</Link>
+        <Link to="/Music">Music</Link>
         <Link to="/CV">CV</Link>
 
       </nav>
@@ -23,6 +27,14 @@ function App() {
         <Route path="/Projects" element={<Projects />} />
         <Route path="/Music" element={<Music />} />
         <Route path="/CV" element={<CV />} />
+
+
+        {/* Subroutes for each project */}
+        <Route path="/projects/tennis" element={<Tennis />} />
+        <Route path="/projects/lost-found" element={<LostFound />} />
+        <Route path="/projects/multiband-distortion" element={<MultibandDistortion />} />
+        <Route path="/projects/fmsynthesizer" element={<FMSynthesizer />} />
+
       </Routes>
     </BrowserRouter>
   );

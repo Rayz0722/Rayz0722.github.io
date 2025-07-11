@@ -1,0 +1,37 @@
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.images {
+  max-width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px; /* Space between the images and the paragraph */
+}
+
+.prototype-image {
+  max-width: 45%;
+}
+
+.audio-container {
+  max-width: 100%;
+  padding: 20px;
+  display: flex;
+  gap: 50px; /* adds space between audio blocks */
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.audio-block {
+  max-width: 50%;
+  display: flex;
+  flex-direction: row;
+  gap: 10px; /* spacing between label and player */
+}
+
+.audio-block p {
+  font-weight: bold;
+  margin: 0;
+}
