@@ -1,0 +1,28 @@
+@import '@fortawesome/fontawesome-free/css/all.min.css';
+
+#root {
+  max-width: 75%;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+}
+
+
+nav {
+  width:100%;
+  background-color: #b7e0f8; 
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+nav a{
+  font-size: 18px;
+  font-weight: bold;
+  justify-content: center;
+}
+
+.read-the-docs {
+  color: #888;
+}

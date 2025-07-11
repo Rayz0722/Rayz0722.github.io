@@ -1,0 +1,37 @@
+.container{
+  max-width: 100%;   /* or any width you want */
+  margin: 0 auto;      /* centers the container */
+  justify-content: center;
+}
+
+.projects-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center; /* optional: center blocks horizontally */
+  gap: 20px; /* space between project blocks */
+  padding: 20px;
+  box-sizing: border-box;
+  justify-content: center;
+}
+
+
+.project-block {
+  display: block;
+  width: 90%;
+  height: 150px;      /* or fixed height if you want uniform blocks */
+  padding: 0px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-sizing: border-box;
+  text-decoration: none;
+  text-align: center;
+  color: inherit;
+  background-color: white;
+}
+
+
+.project-block:hover {
+  background-color: #f0f0f0;
+}
+

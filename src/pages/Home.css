@@ -1,0 +1,23 @@
+.profile-container {
+  
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: sans-serif;
+}
+
+.social-icons {
+  margin-bottom: 20px;
+}
+
+.social-icons a {
+  margin-right: 15px;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+.MyProfile p {
+  text-align: left;
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
