@@ -1,13 +1,13 @@
-.container{
-  max-width: 100%;   /* or any width you want */
-  margin: 0 auto;      /* centers the container */
+.container {
+  max-width: 100%; /* or any width you want */
+  margin: 0 auto; /* centers the container */
   justify-content: center;
 }
 
 .projects-container {
   max-width: 100%;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   align-items: center; /* optional: center blocks horizontally */
   gap: 40px; /* space between project blocks */
   padding: 20px;
@@ -15,30 +15,34 @@
   justify-content: center;
 }
 
-
 .project-block {
-  display: block;
-  justify-content: center;
-  width: 100%;
-  height: 150px;      /* or fixed height if you want uniform blocks */
-  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* evenly space content */
+  height: 100%; /* allow equal height */
+  padding: 20px;
   border: 1px solid #ccc;
   border-radius: 10px;
+  background-color: white;
   box-sizing: border-box;
   text-align: center;
   color: inherit;
-  background-color: white;
-  
+  transition: background-color 0.2s ease;
+}
+
+.project-block h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 .project-block p {
-  margin: 10px auto 0 auto;
-  display: block;
-  width: 90%;                /* optional: control line width */
+  font-size: 1rem;
+  line-height: 1.4;
+  margin: 0;
+  flex-grow: 1;
   text-align: center;
 }
 
 .project-block:hover {
   background-color: #f0f0f0;
 }
-
