@@ -8,6 +8,7 @@ import Tennis from './pages/project_page/Tennis';
 import LostFound from './pages/project_page/LostFound';
 import MultibandDistortion from './pages/project_page/MultibandDistortion';
 import FMSynthesizer from './pages/project_page/FMSynthesizer';
+import SongSeg from './pages/project_page/SongSeg';
 import './App.css'
 
 
@@ -30,6 +31,7 @@ function App() {
 
 
         {/* Subroutes for each project */}
+        <Route path="/projects/song-segmentation" element={<SongSeg />} />
         <Route path="/projects/tennis" element={<Tennis />} />
         <Route path="/projects/lost-found" element={<LostFound />} />
         <Route path="/projects/multiband-distortion" element={<MultibandDistortion />} />

@@ -1,0 +1,35 @@
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.images {
+  max-width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px; /* Space between the images and the paragraph */
+}
+
+.spec-image {
+  max-width: 45%;
+}
+
+.content {
+  ul,
+  li {
+    text-align: left;
+  }
+
+  h2,
+  h3,
+  h4 {
+    text-align: left;
+  }
+}
+
+.tablediv {
+  display: flex;
+  justify-content: center; /* Horizontal centering */
+  align-items: center; /* Vertical centering (if there's enough height) */
+}

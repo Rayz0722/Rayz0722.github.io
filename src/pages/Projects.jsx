@@ -7,11 +7,9 @@ export default function Projects() {
       <h1>Projects</h1>
 
       <div className="projects-container">
-          <Link to="/projects/tennis" className="project-block">
-         
-              <h2>Tennis Bole</h2>
-              <p>A platform that helps sports teams discover and recruit talents.</p>
-  
+          <Link to="/projects/song-segmentation" className="project-block">
+              <h2>Song Segmentation</h2>
+              <p>A MIR method to segment songs based on mixing characteristics.</p>
           </Link>
 
           <Link to="/projects/lost-found" className="project-block">
@@ -33,6 +31,13 @@ export default function Projects() {
               <h2>FM Bass Synthesizer</h2>
               <p>A game joystick bass synthesizer using Bela, PureData, and 3D printing.</p>
  
+          </Link>
+
+
+          <Link to="/projects/tennis" className="project-block">
+              <h2>Tennis Bole</h2>
+              <p>A platform that helps sports teams discover and recruit talents.</p>
+  
           </Link>
 
       </div>
