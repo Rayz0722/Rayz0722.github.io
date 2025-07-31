@@ -1,25 +1,44 @@
-.container{
-  max-width: 100%;  
-  margin: 0 auto;      
+.f-container {
+  max-width: 70%;
+  margin: 0 auto;
   justify-content: center;
+  p {
+    text-align: left;
+    font-size: clamp(0.5rem, 1vw + 0.5rem, 1rem);
+  }
+  h1 {
+    background: linear-gradient(180deg, #000000 0%, #6e6d6d 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "SF Pro Text-Bold", Helvetica;
+    font-size: clamp(1rem, 1vw + 2rem, 10rem);
+  }
 }
 
-.images{
+.f-container h3 {
+  text-align: left;
+  font-family: "SF Pro Text-Bold", Helvetica;
+  font-size: clamp(0.7rem, 1vw + 0.5rem, 1.4rem);
+  border-bottom: 3px solid #1a1a1ab6;
+}
+
+.images {
   max-width: 100%;
   justify-content: center;
   align-items: center;
   margin-bottom: 20px; /* Space between the images and the paragraph */
 }
 
-.prototype-image{
-    max-width: 50%;
+.prototype-image {
+  max-width: 50%;
 }
 
 .YoutubePlayer {
-  width: 60%;                  /*  make it 50% of parent/container */
-  aspect-ratio: 16 / 9;        /*  maintain 16:9 ratio */
+  width: 60%; /*  make it 50% of parent/container */
+  aspect-ratio: 16 / 9; /*  maintain 16:9 ratio */
   position: relative;
-  margin: 0 auto;              /* center it if needed */
+  margin: 0 auto; /* center it if needed */
   justify-content: center;
   align-items: center;
 }

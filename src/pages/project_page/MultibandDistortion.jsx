@@ -2,8 +2,8 @@ import "./MultibandDistortion.css";
 export default function MultibandDistortion() {
   return (
     <div className="page">
-      <h1>Multi-band Ditortion Plugin</h1>
-      <div className="container">
+      <div className="m-container">
+        <h1>Multi-band Ditortion Plugin</h1>
         <h3> Motivation</h3>
         <p>
           I enjoy Bass Music like Dubstep. This genre usually requires a lot of

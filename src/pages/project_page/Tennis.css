@@ -1,11 +1,16 @@
-.l-container {
+.t-container {
   max-width: 70%;
   margin: 0 auto;
-  justify-content: center;
   p {
+    font-size: clamp(0.5rem, 1vw + 0.5rem, 1rem);
     text-align: left;
     font-family: "SF Pro Text-Bold", Helvetica;
   }
+  h2 {
+    text-align: left;
+    border-bottom: 3px solid #1a1a1ab6;
+  }
+
   h1 {
     background: linear-gradient(180deg, #000000 0%, #6e6d6d 100%);
     background-clip: text;
@@ -14,19 +19,4 @@
     font-family: "SF Pro Text-Bold", Helvetica;
     font-size: clamp(1rem, 1vw + 2rem, 10rem);
   }
-}
-
-.images {
-  max-width: 100%;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 20px; /* Space between the images and the paragraph */
-}
-
-.prototype-image {
-  max-width: 45%;
-}
-
-.YoutubePlayer {
-  max-width: 50%;
 }

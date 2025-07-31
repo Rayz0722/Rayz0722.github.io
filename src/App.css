@@ -1,30 +1,35 @@
-@import '@fortawesome/fontawesome-free/css/all.min.css';
+@import "@fortawesome/fontawesome-free/css/all.min.css";
 
 #root {
-  max-width: 75%;
+  background-color: #f5f5f7;
+  /*background: linear-gradient(225deg, #ffffff 0%, #6e6d6d 100%);*/
+  max-width: 100%;
   width: 100%;
   margin: 0 auto;
   padding: 0;
   text-align: center;
 }
 
-
 nav {
-  max-width:100%;
-  background-color: #b7e0f8; 
+  max-width: 100%;
+  background-color: #000000cc;
   margin: 0 auto;
-  padding: 20px;
+  padding: 10px 10px 10px 80px; /* top, right, bottom, left */
   display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
+  justify-content: left;
+  align-items: left;
+  gap: 30px;
 }
 
-nav a{
-  font-size: 18px;
-  font-weight: bold;
+nav a {
+  color: #ffffffcc;
+  font-family: "SF Pro Text-Bold", Helvetica;
+  font-size: clamp(0.7rem, 1vw + 0.5rem, 1.2rem);
 }
 
+nav a:hover {
+  color: #ffffff;
+}
 .read-the-docs {
   color: #888;
 }

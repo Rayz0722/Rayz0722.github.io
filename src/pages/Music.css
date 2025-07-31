@@ -1,18 +1,47 @@
+.page {
+  width: 100%;
+}
 .musicpage {
-    width: 100%;
+  width: 100%;
+  margin: 0 auto;
+  justify-content: center;
+  h1 {
+    background: linear-gradient(180deg, #8f8f8f 0%, #000000 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "SF Pro Text-Bold", Helvetica;
+    color: black;
+    text-align: center;
+  }
 }
 
-.container p {
-  text-align: left;
-  margin-bottom: 10px;
-  line-height: 1.5;
+.container {
+  p {
+    font-family: "SF Pro Text-Bold", Helvetica;
+    color: black;
+    text-align: left;
+    margin-bottom: 10px;
+    line-height: 1.5;
+    font-size: clamp(0.8rem, 1vw + 0.1rem, 1.2rem);
+  }
 }
 
 .iframes-container {
-  width: 100%;
+  width: 70%;
+  margin: 0 auto;
   display: flex;
   flex-direction: column; /* stack vertically */
-  align-items: center;
+  align-items: left;
   gap: 24px; /* space between iframes */
   margin-top: 20px; /* optional space above the whole group */
+  h1 {
+    padding-bottom: 30px;
+    margin-bottom: 20px;
+    border-bottom: 4px solid #1a1a1a;
+    font-size: 2rem;
+    margin-bottom: 10px;
+    text-align: left;
+    color: #333; /* or any color you prefer */
+  }
 }

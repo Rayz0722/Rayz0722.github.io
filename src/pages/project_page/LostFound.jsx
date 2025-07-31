@@ -2,8 +2,8 @@ import "./LostFound.css";
 
 export default function LostFound() {
   return (
-    <div className="container">
-      <h1>HoosLost&HoosFound</h1>
+    <div className="l-container">
+      <h1>HoosLost & HoosFound</h1>
       <div className="images">
         <img
           src="/assets/mainpage1.png"

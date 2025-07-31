@@ -1,0 +1,19 @@
+.Resume {
+  max-width: 80%;
+  padding: 20px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.responsive-iframe-container {
+  width: 100%;
+  height: 100vw; /* Viewport-based height */
+  border: 1px solid #ccc;
+  overflow: hidden;
+}
+
+.responsive-iframe-container iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}

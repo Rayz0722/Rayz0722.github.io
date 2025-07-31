@@ -1,13 +1,47 @@
 .profile-container {
-  
-  max-width: 100%;
+  /*background-color: #f5f5f7;*/
+  /*background: linear-gradient(180deg, #ffffff 0%, #6e6d6d 100%);*/
+  max-width: 70%;
   margin: 0 auto;
   padding: 20px;
-  font-family: sans-serif;
+  font-family: "SF Pro Text-Bold", Helvetica;
+  font-size: clamp(0.5rem, 1vw + 0.1rem, 1.2rem);
+  h1,
+  h3 {
+    background: linear-gradient(180deg, #000000 0%, #6e6d6d 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "SF Pro Text-Bold", Helvetica;
+  }
+  p {
+    text-align: left;
+    font-family: "SF Pro Text-Bold", Helvetica;
+  }
 }
 
+.contact {
+  background-color: #ffffff;
+  /*border-radius: 18px;*/
+  min-height: 350px; /* optional baseline height */
+  height: auto;
+  overflow: hidden;
+  position: relative;
+  width: 300px;
+  transition: transform 0.3s ease;
+  border-left: 2px solid #6e6d6d;
+  border-bottom: 2px solid #6e6d6d;
+}
+.contact:hover {
+  transform: scale(1.05);
+}
+.text-wrapper {
+  margin-top: -20px;
+  padding: 30px;
+}
 .social-icons {
-  margin-bottom: 20px;
+  margin-top: 20px;
+  margin-bottom: -20px;
 }
 
 .social-icons a {
@@ -16,8 +50,69 @@
   text-decoration: none;
 }
 
-.MyProfile p {
+.intro {
+  flex: 1;
+  background-color: #ffffff;
+  /*border-radius: 18px;*/
+  min-height: 350px; /* optional baseline height */
+  height: auto;
+  overflow: hidden;
+  position: relative;
+  width: 700px;
+  transition: transform 0.3s ease;
+  border-right: 2px solid #6e6d6d;
+  border-top: 2px solid #6e6d6d;
+  p {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+}
+.intro:hover {
+  transform: scale(1.05); /* Slight zoom (5% bigger) */
+}
+.MyProfile {
+  margin: 20px auto;
+  padding: 20px;
+  display: flex;
+  gap: 40px; /* spacing between contact and MyProfile */
+  align-items: flex-start;
+  flex-wrap: wrap; /* optional: wrap on small screens */
+
+  p {
+    font-family: "SF Pro Text-Bold", Helvetica;
+    color: black;
+    text-align: left;
+    margin-bottom: 10px;
+    line-height: 1.5;
+  }
+}
+
+.other-info {
+  background-color: #ffffff;
+  /*border-radius: 18px;*/
+  min-height: 350px; /* optional baseline height */
+  height: auto;
+  overflow: hidden;
+  position: relative;
+  width: 1040px;
+  transition: transform 0.3s ease;
+
+  border-left: 2px solid #6e6d6d;
+  border-bottom: 2px solid #6e6d6d;
+}
+.other-info:hover {
+  transform: scale(1.05);
+}
+
+.other-text {
+  font-family: "SF Pro Text-Bold", Helvetica;
+  color: black;
   text-align: left;
-  margin-bottom: 10px;
-  line-height: 1.5;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+footer {
+  padding: 10px;
+  text-align: center;
 }
