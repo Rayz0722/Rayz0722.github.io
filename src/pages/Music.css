@@ -1,47 +1,263 @@
-.page {
+.music {
+  /* neutral cool grayscale — mirrors Home.css */
+  --bg: #eff0f2;
+  --ink: #0e0f12;
+  --dim: #55585f;
+  --dimmer: #8a8e96;
+  --hair: rgba(14, 15, 18, 0.09);
+  --hair-soft: rgba(14, 15, 18, 0.06);
+  --panel: rgba(255, 255, 255, 0.66);
+  --panel-hover: rgba(255, 255, 255, 0.84);
+  --glass-edge: rgba(255, 255, 255, 0.7);
+  --blur: saturate(140%) blur(28px);
+  --fill: rgba(14, 15, 18, 0.045);
+  --shadow:
+    0 1px 1px rgba(14, 15, 18, 0.04), 0 10px 28px rgba(14, 15, 18, 0.06);
+  --shadow-hover:
+    0 2px 4px rgba(14, 15, 18, 0.06), 0 20px 44px rgba(14, 15, 18, 0.1);
+
+  --text: var(--ink);
+  --accent: var(--ink);
+  --line: var(--hair);
+
   width: 100%;
-}
-.musicpage {
-  width: 100%;
-  margin: 0 auto;
-  justify-content: center;
-  h1 {
-    background: linear-gradient(180deg, #8f8f8f 0%, #000000 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-family: "SF Pro Text-Bold", Helvetica;
-    color: black;
-    text-align: center;
-  }
+  min-height: 100vh;
+  background: var(--bg);
+  color: var(--ink);
+  font-family:
+    -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display",
+    "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.011em;
+  text-align: left;
+  -webkit-font-smoothing: antialiased;
 }
 
-.container {
-  p {
-    font-family: "SF Pro Text-Bold", Helvetica;
-    color: black;
-    text-align: left;
-    margin-bottom: 10px;
-    line-height: 1.5;
-    font-size: clamp(0.8rem, 1vw + 0.1rem, 1.2rem);
-  }
+.music a {
+  color: var(--ink);
+  text-decoration: none;
 }
 
-.iframes-container {
-  width: 70%;
+.music-wrap {
+  position: relative;
+  z-index: 1;
+  max-width: 860px;
   margin: 0 auto;
+  padding: 80px 24px 120px;
+}
+
+.music-hero {
+  margin-bottom: 64px;
+}
+
+.music-eyebrow {
+  margin: 0 0 14px;
+  font-size: 0.64rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--dimmer);
+}
+
+.music-title {
+  font-size: 2.5rem;
+  font-weight: 600;
+  letter-spacing: -0.04em;
+  line-height: 1.06;
+  margin: 0 0 22px;
+  max-width: 17ch;
+  color: var(--ink);
+  background: none;
+  -webkit-text-fill-color: currentColor;
+}
+
+.music-lede {
+  margin: 0;
+  max-width: 60ch;
+  font-size: 1rem;
+  color: var(--dim);
+}
+
+.music-sec {
+  margin-top: 64px;
+}
+
+.music-h2 {
   display: flex;
-  flex-direction: column; /* stack vertically */
-  align-items: left;
-  gap: 24px; /* space between iframes */
-  margin-top: 20px; /* optional space above the whole group */
-  h1 {
-    padding-bottom: 30px;
-    margin-bottom: 20px;
-    border-bottom: 4px solid #1a1a1a;
-    font-size: 2rem;
-    margin-bottom: 10px;
-    text-align: left;
-    color: #333; /* or any color you prefer */
+  align-items: baseline;
+  gap: 16px;
+  font-size: 1.7rem;
+  font-weight: 600;
+  letter-spacing: -0.035em;
+  line-height: 1.1;
+  margin: 0 0 10px;
+  color: var(--ink);
+  background: none;
+  -webkit-text-fill-color: currentColor;
+}
+.music-h2::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: var(--hair);
+}
+
+.music-sub {
+  margin: 0 0 24px;
+  color: var(--dim);
+  font-size: 0.95rem;
+  max-width: 58ch;
+}
+
+/* ---------- playlists ---------- */
+
+.playlists {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 22px;
+}
+
+.playlist {
+  background: var(--panel);
+  -webkit-backdrop-filter: var(--blur);
+  backdrop-filter: var(--blur);
+  border: 1px solid var(--glass-edge);
+  border-radius: 16px;
+  padding: 22px 24px 24px;
+  box-shadow: var(--shadow);
+}
+
+.playlist-head {
+  margin-bottom: 16px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid var(--hair-soft);
+}
+.playlist-head h3 {
+  margin: 0 0 3px;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  color: var(--ink);
+  background: none;
+  -webkit-text-fill-color: currentColor;
+}
+.playlist-head p {
+  margin: 0;
+  font-size: 0.84rem;
+  color: var(--dimmer);
+}
+
+.playlist iframe {
+  display: block;
+  border-radius: 12px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.5);
+  filter: grayscale(1) contrast(1.03);
+  transition: filter 0.4s ease;
+}
+.playlist:hover iframe {
+  filter: none;
+}
+
+/* ---------- music tech cards ---------- */
+
+.tech-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 14px;
+}
+
+.tech-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background: var(--panel);
+  -webkit-backdrop-filter: var(--blur);
+  backdrop-filter: var(--blur);
+  border: 1px solid var(--glass-edge);
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: var(--shadow);
+  color: var(--ink);
+  transition:
+    transform 0.45s cubic-bezier(0.16, 1, 0.3, 1),
+    box-shadow 0.45s cubic-bezier(0.16, 1, 0.3, 1),
+    background 0.45s ease;
+}
+.tech-card:hover {
+  transform: translateY(-4px);
+  background: var(--panel-hover);
+  box-shadow: var(--shadow-hover);
+  text-decoration: none;
+}
+
+.tech-stack {
+  margin: 0 0 12px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--hair-soft);
+  font-size: 0.62rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--dimmer);
+}
+
+.tech-title {
+  margin: 0 0 10px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: -0.025em;
+  line-height: 1.22;
+  color: var(--ink);
+  background: none;
+  -webkit-text-fill-color: currentColor;
+}
+
+.tech-blurb {
+  margin: 0 0 18px;
+  font-size: 0.88rem;
+  color: var(--dim);
+  flex: 1;
+}
+
+.tech-more {
+  font-size: 0.82rem;
+  color: var(--ink);
+  border-bottom: 1px solid rgba(14, 15, 18, 0.22);
+  align-self: flex-start;
+  padding-bottom: 1px;
+  transition: border-color 0.3s ease;
+}
+.tech-card:hover .tech-more {
+  border-bottom-color: var(--ink);
+}
+
+.music-foot {
+  margin-top: 80px;
+  padding-top: 18px;
+  border-top: 1px solid var(--hair);
+  font-size: 0.74rem;
+  letter-spacing: 0.02em;
+  color: var(--dimmer);
+}
+.music-foot p {
+  margin: 0;
+}
+
+@media (max-width: 720px) {
+  .music-wrap {
+    padding: 40px 16px 80px;
+  }
+  .music-title {
+    font-size: 1.9rem;
+    max-width: none;
+  }
+  .music-h2 {
+    font-size: 1.5rem;
+  }
+  .playlist {
+    padding: 18px 16px 20px;
   }
 }

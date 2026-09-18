@@ -1,0 +1,366 @@
+/* Long-form article shell for the music-technology write-ups.
+   Mirrors the tokens and type scale in Home.css / Music.css so the
+   articles read as part of the same site. */
+
+.article {
+  /* neutral cool grayscale — mirrors Home.css */
+  --bg: #eff0f2;
+  --ink: #0e0f12;
+  --dim: #55585f;
+  --dimmer: #8a8e96;
+  --hair: rgba(14, 15, 18, 0.09);
+  --hair-soft: rgba(14, 15, 18, 0.06);
+  --panel: rgba(255, 255, 255, 0.66);
+  --panel-hover: rgba(255, 255, 255, 0.84);
+  --glass-edge: rgba(255, 255, 255, 0.7);
+  --blur: saturate(140%) blur(28px);
+  --fill: rgba(14, 15, 18, 0.045);
+  --shadow:
+    0 1px 1px rgba(14, 15, 18, 0.04), 0 10px 28px rgba(14, 15, 18, 0.06);
+
+  width: 100%;
+  min-height: 100vh;
+  background: var(--bg);
+  color: var(--ink);
+  font-family:
+    -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display",
+    "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.011em;
+  text-align: left;
+  -webkit-font-smoothing: antialiased;
+}
+
+.article a {
+  color: var(--ink);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(14, 15, 18, 0.22);
+  padding-bottom: 1px;
+  transition: border-color 0.3s ease;
+}
+.article a:hover {
+  color: var(--ink);
+  border-bottom-color: var(--ink);
+}
+
+.article-wrap {
+  position: relative;
+  z-index: 1;
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 72px 24px 120px;
+}
+
+/* ---------- hero ---------- */
+
+.article-head {
+  margin-bottom: 56px;
+}
+
+.article-back {
+  display: inline-block;
+  margin-bottom: 26px;
+  font-size: 0.74rem;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--dimmer);
+  border-bottom: none;
+  transition: color 0.3s ease;
+}
+.article-back:hover {
+  color: var(--ink);
+  border-bottom: none;
+}
+
+.article-stack {
+  margin: 0 0 14px;
+  font-size: 0.62rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--dimmer);
+}
+
+.article-title {
+  font-size: 2.5rem;
+  font-weight: 600;
+  letter-spacing: -0.04em;
+  line-height: 1.06;
+  margin: 0 0 20px;
+  max-width: 18ch;
+  color: var(--ink);
+  background: none;
+  -webkit-text-fill-color: currentColor;
+}
+
+.article-lede {
+  margin: 0;
+  font-size: 1.02rem;
+  line-height: 1.6;
+  color: var(--dim);
+}
+
+/* ---------- prose ---------- */
+
+.article-body h2 {
+  display: flex;
+  align-items: baseline;
+  gap: 16px;
+  font-size: 1.7rem;
+  font-weight: 600;
+  letter-spacing: -0.035em;
+  line-height: 1.1;
+  margin: 64px 0 18px;
+  color: var(--ink);
+  background: none;
+  -webkit-text-fill-color: currentColor;
+  border-bottom: none;
+}
+.article-body h2::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: var(--hair);
+}
+
+.article-body h3 {
+  font-size: 1.08rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  line-height: 1.3;
+  margin: 38px 0 12px;
+  color: var(--ink);
+  background: none;
+  -webkit-text-fill-color: currentColor;
+  border-bottom: none;
+}
+
+.article-body h4 {
+  font-size: 0.64rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  margin: 30px 0 10px;
+  color: var(--dimmer);
+  border-bottom: none;
+}
+
+.article-body p {
+  margin: 0 0 18px;
+  font-size: 0.95rem;
+  line-height: 1.72;
+  color: var(--dim);
+}
+
+.article-body strong {
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.article-body em {
+  font-style: italic;
+}
+
+.article-body ul,
+.article-body ol {
+  margin: 0 0 20px;
+  padding-left: 20px;
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: var(--dim);
+}
+.article-body li {
+  margin-bottom: 7px;
+  padding-left: 4px;
+}
+.article-body li::marker {
+  color: var(--dimmer);
+  font-size: 0.85em;
+}
+
+.article-body code {
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, monospace;
+  font-size: 0.86em;
+  letter-spacing: 0;
+  color: var(--ink);
+  background: var(--fill);
+  border-radius: 5px;
+  padding: 2px 6px;
+}
+
+/* ---------- figures ---------- */
+
+.fig {
+  margin: 26px 0 30px;
+  padding: 16px;
+  background: var(--panel);
+  -webkit-backdrop-filter: var(--blur);
+  backdrop-filter: var(--blur);
+  border: 1px solid var(--glass-edge);
+  border-radius: 16px;
+  box-shadow: var(--shadow);
+}
+
+.fig img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.6);
+}
+
+.fig figcaption {
+  margin-top: 12px;
+  padding-top: 11px;
+  border-top: 1px solid var(--hair-soft);
+  font-size: 0.74rem;
+  letter-spacing: 0.01em;
+  color: var(--dimmer);
+}
+
+/* two images side by side inside one panel */
+.fig-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 12px;
+}
+
+/* screenshots of diagrams/code read better a little narrower */
+.fig-narrow img {
+  max-width: 560px;
+  margin: 0 auto;
+}
+
+/* ---------- video ---------- */
+
+.article-video {
+  margin: 26px 0 30px;
+  padding: 16px;
+  background: var(--panel);
+  -webkit-backdrop-filter: var(--blur);
+  backdrop-filter: var(--blur);
+  border: 1px solid var(--glass-edge);
+  border-radius: 16px;
+  box-shadow: var(--shadow);
+}
+.article-video iframe {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: none;
+  border-radius: 10px;
+  background: rgba(14, 15, 18, 0.04);
+}
+
+/* ---------- table ---------- */
+
+.article-table {
+  margin: 26px 0 30px;
+  padding: 8px 6px;
+  background: var(--panel);
+  -webkit-backdrop-filter: var(--blur);
+  backdrop-filter: var(--blur);
+  border: 1px solid var(--glass-edge);
+  border-radius: 16px;
+  box-shadow: var(--shadow);
+  overflow-x: auto;
+}
+
+.article-table table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.84rem;
+}
+
+.article-table th {
+  padding: 12px 14px;
+  text-align: left;
+  font-size: 0.6rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--dimmer);
+  border-bottom: 1px solid var(--hair);
+  white-space: nowrap;
+}
+
+.article-table td {
+  padding: 10px 14px;
+  color: var(--dim);
+  border-bottom: 1px solid var(--hair-soft);
+}
+.article-table tr:last-child td {
+  border-bottom: none;
+}
+.article-table td:last-child {
+  color: var(--ink);
+}
+
+/* ---------- audio comparison ---------- */
+
+.audio-pair {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 14px;
+  margin: 26px 0 30px;
+}
+
+.audio-block {
+  background: var(--panel);
+  -webkit-backdrop-filter: var(--blur);
+  backdrop-filter: var(--blur);
+  border: 1px solid var(--glass-edge);
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: var(--shadow);
+}
+
+.audio-block p {
+  margin: 0 0 14px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--hair-soft);
+  font-size: 0.62rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--dimmer);
+}
+
+.audio-block audio {
+  display: block;
+  width: 100%;
+}
+
+/* ---------- footer ---------- */
+
+.article-foot {
+  margin-top: 80px;
+  padding-top: 18px;
+  border-top: 1px solid var(--hair);
+  font-size: 0.74rem;
+  letter-spacing: 0.02em;
+}
+.article-foot a {
+  color: var(--dimmer);
+  border-bottom: none;
+}
+.article-foot a:hover {
+  color: var(--ink);
+  border-bottom: none;
+}
+
+@media (max-width: 720px) {
+  .article-wrap {
+    padding: 40px 16px 80px;
+  }
+  .article-title {
+    font-size: 1.9rem;
+    max-width: none;
+  }
+  .article-body h2 {
+    font-size: 1.45rem;
+    margin-top: 48px;
+  }
+}
